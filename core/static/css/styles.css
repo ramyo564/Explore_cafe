@@ -3619,6 +3619,10 @@ textarea.form-control-lg {
   list-style: none;
 }
 
+.navbar.navbar-dark.scrolled {
+  background-color: #000000;
+}
+
 .nav-link {
   display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
@@ -10912,7 +10916,7 @@ p {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border: none;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.4);
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
