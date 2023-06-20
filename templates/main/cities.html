@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <style>
+    .btn-custom {
+      background-color: #ffc800;
+      color: black;
+
+      margin: 10px;
+
+    }
+  </style>
+  <div class="container">
+
+    <section>
+      <h2>
+        <i class='fa fa-fw fa-map-marker'></i>
+        South Korea
+      </h2>
+      {% for city in city_names %}
+        <a class="btn btn-default btn-lg btn-custom" href="/{{ city.slug }}">{{city}}</a>
+      {% endfor %}
+    </section>
+
+  </div>
+
+{% endblock content %}
